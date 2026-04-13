@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import "./dashboard.css";
+import "./Dashboard.css";
 
 function Dashboard() {
  
