@@ -1,0 +1,41 @@
+.booking-container {
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.booking-container h1 {
+  margin-bottom: 20px;
+  color: #243b55;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #243b55;
+  color: white;
+}
+
+.cancel-btn {
+  padding: 6px 12px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #c0392b;
+}

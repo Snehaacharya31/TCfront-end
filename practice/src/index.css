@@ -1,0 +1,130 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+    --primary: #0b0b0f;
+  --primary-hover: #0f0f11;
+  --bg-dark: #0f172a;
+  --bg-light: #1b1c1d;
+  --text-dark: #0f172a;
+  --text-light: #060606;
+  --card-bg: #1e293b;
+
+  color-scheme: light dark;
+  color: var(--text-light);
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 0.7em 1.4em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-dark);
+    background: var(--bg-light);
+  }
+
+  body {
+    background: linear-gradient(135deg, #ffffff, #e2e8f0);
+  }
+
+  .card {
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  input {
+    background: white;
+    color: black;
+  }
+
+  button {
+    background: var(--primary);
+    color: white;
+  }
+}

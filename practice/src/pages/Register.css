@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  
+  height: 100vh;
+}
+
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32");
+  height: 100vh;
+}
+
+
+.register-card {
+  background: #fef9fe;
+  padding: 35px 40px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+
+.register-card h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 26px;
+}
+
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+
+.input-group input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102,126,234,0.4);
+}
+
+
+.register-card button {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  border: none;
+  border-radius: 8px;
+  color: rgb(131, 223, 190);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.register-card button:hover {
+  background: #5563d1;
+}
+
+
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color:black;
+}
+
+.login-text span {
+  color: #667eea;
+  cursor: pointer;
+  font-weight: bold;
+}

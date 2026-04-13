@@ -1,0 +1,93 @@
+.events-container {
+  min-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(
+    135deg,
+    #29596e,
+    #203a43,
+    #2c5364
+  );
+  background-size: 300% 300%;
+  animation: gradientFlow 12s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.events-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+
+.event-card {
+  background: rgba(201, 160, 156, 0.95);
+  border-radius: 18px;
+  overflow: hidden;
+
+  -webkit-backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);         
+
+  box-shadow: 0 55px 35px rgba(231, 234, 230, 0.25);
+  transition: 0.3s ease;
+}
+
+
+.event-card:hover {
+  transform: translateY(-10px);
+  border: solid 5px rgba(16, 15, 15, 0.756);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+
+.event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  margin: 20px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.event-card p {
+  margin: 0 20px 20px 20px;
+  color: #080909;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+.view-btn {
+  margin: 0 20px 25px 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+}

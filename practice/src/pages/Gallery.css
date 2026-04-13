@@ -1,0 +1,22 @@
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0px;
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-item video {
+  background: black;
+}

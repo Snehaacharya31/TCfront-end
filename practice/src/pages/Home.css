@@ -1,0 +1,94 @@
+
+
+.hero {
+  height: 150vh;
+  background: url("https://images.unsplash.com/photo-1522673607200-164d1b6ce486");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.65);
+
+ 
+
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+
+
+.title {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 30px;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+
+
+.hero-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg,#03a466,#9e0d89);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+.services-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #525256;
+}
+
+.services-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+
+.service-card {
+  background: rgb(13, 10, 13);
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.home-footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
